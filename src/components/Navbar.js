@@ -1,4 +1,7 @@
 import React from 'react'
+import {ReactComponent as HomeIcon} from '../svgs/home.svg'
+import {ReactComponent as SeachIcon} from '../svgs/search.svg'
+import {ReactComponent as LibraryIcon} from '../svgs/library.svg'
 
 const Navbar = () => {
     return (
@@ -11,9 +14,9 @@ const Navbar = () => {
             </svg>
           </div>
             <ul>
-              <li className="active">Home</li>
-              <li>Search</li>
-              <li>Your Library</li>
+              <li className="active"><HomeIcon />Home</li>
+              <li><SeachIcon />Search</li>
+              <li><LibraryIcon />Your Library</li>
             </ul>
             
             <div className="cookies">
