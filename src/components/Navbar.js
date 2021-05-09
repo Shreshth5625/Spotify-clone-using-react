@@ -2,6 +2,7 @@ import React from 'react'
 import {ReactComponent as HomeIcon} from '../svgs/home.svg'
 import {ReactComponent as SeachIcon} from '../svgs/search.svg'
 import {ReactComponent as LibraryIcon} from '../svgs/library.svg'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -14,9 +15,9 @@ const Navbar = () => {
             </svg>
           </div>
             <ul>
-              <li className="active"><HomeIcon />Home</li>
-              <li><SeachIcon />Search</li>
-              <li><LibraryIcon />Your Library</li>
+              <Link to='/'><li className="active"><HomeIcon />Home</li></Link>
+              <Link to='/search'><li><SeachIcon />Search</li></Link>
+              <Link to='/your-library'><li><LibraryIcon />Your Library</li></Link>
             </ul>
             
             <div className="cookies">
